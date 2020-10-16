@@ -12,6 +12,11 @@ body{
     overflow-x: hidden;
 }
 
+.Imagem-Back img{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
 
 .Navbar{
     display: flex;
@@ -25,7 +30,7 @@ body{
     padding: 8px 20px;
     border-bottom: 2px solid rgba(216, 206, 240, 0.137);
     box-shadow: 0px 6px 17px -4px rgba(0,0,0,0.75);
-
+    
 }
 
 .Navbar h1{
@@ -70,22 +75,64 @@ body{
     cursor: pointer;
 
 }
-.Sobre{
-    background-color: rgb(107, 151, 151);
-    width: 100vw;
-    height: 500px;
-    align-items: center;
-}
-.Sobre h1{
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.Sobre h2{
-    text-align: center;
-    
-    font-family: Arial, Helvetica, sans-serif;
+
+
+.info-titulo{
+    position: absolute;
+    top: 40vh;
+    left: 10vw;
+    width: 600px;
+    font-family: 'Shrikhand';
+    font-size: 25px;
 }
 
+.info-titulo a{
+    margin-top: 3px;
+    background-color: #000;
+    color: #fff;
+    font: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+.info-botao a:hover{
+    background-color: rgb(144, 144, 144);
+    color: #fff;
+}
+.info-botao{
+    margin-top: 30px;
+}
+
+.Sobre{
+    background-color: #B5CFCC;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Imagem-Sobre img{
+    border-radius: 200%;
+    padding-left: 50px;
+    margin: 30px;
+}
+
+.Texto-Sobre{
+    width: 600px;
+    font-family: 'Shrikhand';
+    font-size: 25px;
+}
+
+@media screen and (max-width:1200px){
+    .Sobre{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Imagem-Sobre img{
+        border-radius: 0%;
+    }
+}
 
 
 
